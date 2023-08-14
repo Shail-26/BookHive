@@ -3,6 +3,11 @@
     font-family: 'Montserrat', sans-serif;
     
 }
+
+a{
+    cursor: pointer;
+}
+
 body{
     margin: 0;
     background-color: rgb(23,23,23);
@@ -13,7 +18,7 @@ header{
 }
 
 .navbar-div {
-    background-color: white;
+    /* background-color: white; */
     display: flex;
 }
 
@@ -27,7 +32,9 @@ header{
 
 .thank-div{
     display: flex;
+    width : 100%;
     justify-content: flex-end;
+    align-items: center;
 }
 .logo-div{
     margin: 5px;
@@ -40,6 +47,7 @@ header{
     margin-left: 7px;
     font-weight: 600;
     color: whitesmoke;
+    cursor: default;
 }
 
 .logo-div img{
@@ -52,8 +60,3 @@ li{
     list-style: none;
 }
 
-.nav-links a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-}
