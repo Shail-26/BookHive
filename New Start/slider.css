@@ -1,4 +1,5 @@
 .temp-slide{
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   background: none;
@@ -10,8 +11,9 @@
   width: 900px;
   height: 400px;
   border-radius: 10px;
-  background-color: black;
+  background-color: rgb(23,23,23);
   overflow: hidden;
+  border: 1.7px solid whitesmoke;
 }
 
 .slides{
@@ -29,9 +31,15 @@
   transition: 2s;
 }
 
+/* .first img{
+  width: 1500px;
+  height: 600px;
+} */
+
 .slide img{
   width: 900px;
-  height: 500px;
+  /* height: 450px; */
+  /* object-fit: contain; */
 }
 
 /* css for manual slide navigation */
@@ -39,7 +47,7 @@
 .navigation-manual{
   position: absolute;
   width: 900px;
-  margin-top: 330px;
+  margin-top: 420px;
   display: flex;
   justify-content: center;
   background: none;
@@ -86,7 +94,7 @@
   display: flex;
   width: 900px;
   justify-content: center;
-  margin-top: 330px;
+  margin-top: 420px;
 }
 
 .navigation-auto div{
@@ -101,17 +109,17 @@
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-  background: violet;
+  background: whitesmoke;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-  background: violet;
+  background: whitesmoke;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
-  background: violet;
+  background: whitesmoke;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
-  background: violet;
+  background: whitesmoke;
 }
