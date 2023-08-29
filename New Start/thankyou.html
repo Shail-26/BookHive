@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/New Start/styles/forall.css" />
+    <link rel="stylesheet" href="/New Start/styles/navbar.css" />
+    <link rel="stylesheet" href="/New Start/styles/navButton.css" />
+    <title>Thank you</title>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+    <script>
+      // Fetch the navbar content from the navbar.html file
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((navbarContent) => {
+          // Insert the navbar content into the container
+          document.getElementById("navbar-container").innerHTML = navbarContent;
+        })
+        .catch((error) => console.error("Error loading navbar:", error));
+    </script>
+  </body>
+</html>

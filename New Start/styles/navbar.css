@@ -1,0 +1,41 @@
+.navbar-div {
+  /* background-color: white; */
+  display: flex;
+}
+
+.navbar-div .nav-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.thank-div{
+  display: flex;
+  width : 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo-div{
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-div a{
+  font-size: 24px;
+  margin-left: 7px;
+  font-weight: 600;
+  color: whitesmoke;
+  cursor: default;
+}
+
+.logo-div img{
+  background-blend-mode: multiply;
+  width: 30px;
+  
+}
+
+li{
+  list-style: none;
+}   
