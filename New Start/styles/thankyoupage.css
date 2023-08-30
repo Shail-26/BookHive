@@ -1,0 +1,26 @@
+.thankyoumsg-container
+{
+  max-width: 600px;
+  margin: 12px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(131, 234, 240);
+}
+
+.thankyoumsg-container h2 {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.thankyoumsg-container p {
+  color: #555555;
+  line-height: 1.6;
+}
+
+.thankyoumsg-container .signature {
+  margin-top: 20px;
+  text-align: right;
+  font-style: italic;
+  color: #888888;
+}
