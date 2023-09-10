@@ -39,3 +39,8 @@
 li{
   list-style: none;
 }   
+
+.logo-div a {
+  text-decoration : none;
+  cursor : pointer;
+}
