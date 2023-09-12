@@ -162,16 +162,16 @@ li {
 .slider{ 
   /* margin-top:130px; */
   /* margin-left: -15%; */
-  width: 900px;
-  height: 400px;
+  width: 1000px;
+  height: 450px;
   border-radius: 10px;
   background-color: black;
   overflow: hidden;
 }
 
 .slides{
-  width: 500%;
-  height: 400px;
+  width: 600%;
+  height: 450px;
   display: flex; 
 }
 

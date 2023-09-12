@@ -4,6 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/New Start/styles/forall.css" type="text/css">
+  <link rel="stylesheet" href="/New Start/styles/navbar.css">
+  <link rel="stylesheet" href="/New Start/styles/navButton.css">
+  <link rel="stylesheet" href="/New Start/styles/newPage.css">
+  <link rel="stylesheet" href="/New Start/styles/slider.css">
+  <script src="https://kit.fontawsome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
     .grid-container {
       display: grid;
@@ -108,10 +116,22 @@
     }
   </style>
 
-  <title>Responsive Grid Example</title>
+  <title>Store</title>
 </head>
 
 <body>
+  <div id="navbar-container">   
+  </div>
+  <script>
+      // Fetch the navbar content from the navbar.html file
+      fetch('navbar.html')
+          .then(response => response.text())
+          .then(navbarContent => {
+          // Insert the navbar content into the container
+              document.getElementById('navbar-container').innerHTML = navbarContent;
+          })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
   <div class="grid-container">
     <div class="grid-item">
       <img src="/images/Book cover pages/1b.jpg" alt="Image 1">
