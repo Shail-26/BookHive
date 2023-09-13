@@ -38,6 +38,7 @@
 
 .slide img{
   width: 900px;
+  height: 400px;
   /* height: 450px; */
   /* object-fit: contain; */
 }
