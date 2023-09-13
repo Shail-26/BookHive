@@ -17,6 +17,7 @@
     ],
     "no-inline-styles": "off",
     "disown-opener": "off",
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "meta-viewport": "off"
   }
 }
