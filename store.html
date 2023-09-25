@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/forall.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/navbar.css" />
+  <link rel="stylesheet" href="/styles/navButton.css" />
+  <link rel="stylesheet" href="/styles/newPage.css" />
+  <link rel="stylesheet" href="/styles/slider.css" />
+  <link rel="stylesheet" href="/styles/store.css" />
+  <link rel="stylesheet" href="/styles/scroll-top.css" />
+  <script src="https://kit.fontawsome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>store</title>
+</head>
+
+<body>
+  <div id="navbar-container">   
+  </div>
+  <script>
+      // Fetch the navbar content from the navbar.html file
+      fetch('navbar.html')
+          .then(response => response.text())
+          .then(navbarContent => {
+          // Insert the navbar content into the container
+              document.getElementById('navbar-container').innerHTML = navbarContent;
+          })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+  <button onclick="topFunction()" id="scrollBtn">
+    <span class="Container">
+      <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#000000" d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z"/>
+    </svg>
+  </button>
+  
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="/images/Book cover pages/1b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#000000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"/>
+          </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Favourite</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/2b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/5b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/6b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/7b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/8.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/9b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/10b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/11b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/12b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/13b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/14b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/15.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/16b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/17b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/18b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/19b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/20b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/21b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/images/Book cover pages/22b.jpg" alt="Image 1">
+      <div class="Btn-div">
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <mask id="ipSReadBook0">
+                <g fill="none" stroke="#fff" stroke-width="4">
+                  <path fill="#fff" stroke-linecap="round" stroke-linejoin="round"
+                    d="M24 21v23c-3.291-4-13.371-4-18-4V18c9.874 0 16.114 2 18 3Zm0 0v23c3.291-4 13.371-4 18-4V18c-9.874 0-16.114 2-18 3Z" />
+                  <circle cx="24" cy="12" r="8" />
+                </g>
+              </mask>
+              <path fill="#000000" d="M0 0h48v48H0z" mask="url(#ipSReadBook0)" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Read</div>
+        </button>
+        <button class="Btn">
+          <span class="svgContainer">
+            <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5" />
+            </svg>
+            <span class="BG"></span>
+            <div class="tooltip">Download</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="/scripts/top-button.js"></script>
+</html>
