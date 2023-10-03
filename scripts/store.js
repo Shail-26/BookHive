@@ -44,7 +44,5 @@ books.forEach((book) => {
       </div>
     </div>
   `;
-  console.log(booksHTML);
-
   document.querySelector('.js-book-grid').innerHTML = booksHTML;
 })

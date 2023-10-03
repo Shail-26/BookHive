@@ -114,4 +114,10 @@ export const books = [{
   pdf: '/Books Data/It-Starts-With-Us.pdf',
   title: 'It Starts With Us',
   author: 'Colleen Hoover',
+}, {
+  id: ++num,
+  image: '/images/Book cover pages/write-me-a-love-story.jpg',
+  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  title: 'It Starts With Us',
+  author: 'Colleen Hoover',
 }];
