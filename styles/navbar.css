@@ -97,3 +97,17 @@ li{
   text-decoration : none;
   cursor : pointer;
 }
+
+.login-logo {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-logo .login-btn {
+  color : white;
+  background-color: black;
+  border-radius: 15px;
+  border : none;
+  padding : 10px;
+}
