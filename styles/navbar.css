@@ -98,13 +98,13 @@ li{
   cursor : pointer;
 }
 
-.login-logo {
+.login-div {
   display : flex;
   justify-content: center;
   align-items: center;
 }
 
-.login-logo .login-btn {
+.login-div .login-btn {
   color : white;
   background-color: black;
   border-radius: 15px;
