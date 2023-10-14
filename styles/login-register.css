@@ -1,4 +1,3 @@
-
 .login-container, 
 .register-container {
   display: flex;
@@ -62,15 +61,16 @@
 }
 
 .account-question, 
-.login-btn{
+.login-button{
   font-size : 16px;
   margin-top : 30px;
   display : flex;
   justify-content: center;
+  animation: bounce2 1.6s;
 }
 
 .sign-up-btn,
-.login-btn{
+.login-button{
   font-weight: bold;
   cursor : pointer;
 }
