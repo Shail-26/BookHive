@@ -114,3 +114,20 @@
   .Btn:hover .tooltip {
     opacity: 1;
   }
+
+  .result-not-found {
+    display : flex;
+    justify-content: center;
+  }
+  .result-not-found a {
+    font-weight : bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .all-books {
+    display : flex;
+    justify-content: center;
+    font-size : 28px;
+    font-weight: 600;
+  }
