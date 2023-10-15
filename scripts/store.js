@@ -5,7 +5,7 @@ let booksHTML = '';
 books.forEach((book) => {
   booksHTML += `
     <div class="grid-item">
-      <img src="${book.image}" alt="Image ${book.id}">
+      <img src="${book.image}" alt="Image ${book.id}" id="image${book.id}">
       <div class="Btn-div">
         <button class="Btn read-online-btn">
           <span class="svgContainer">
@@ -44,5 +44,12 @@ books.forEach((book) => {
       </div>
     </div>
   `;
+  
   document.querySelector('.js-book-grid').innerHTML = booksHTML;
-})
+});
+
+books.forEach((book) => {
+  tippy(`#image${book.id}`, {
+    content: `${book.title}`,
+  });
+});
