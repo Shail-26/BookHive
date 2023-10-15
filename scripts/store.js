@@ -50,6 +50,6 @@ books.forEach((book) => {
 
 books.forEach((book) => {
   tippy(`#image${book.id}`, {
-    content: `${book.title}`,
+    content: `${book.desc}`,
   });
 });
