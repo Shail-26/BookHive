@@ -1,6 +1,11 @@
 .navbar-div {
   /* background-color: white; */
   display: flex;
+  justify-content: space-between;
+}
+
+.logo-link-div{
+  display: flex;
 }
 
 .navbar-div .nav-links{
@@ -110,4 +115,35 @@ li{
   border-radius: 15px;
   border : none;
   padding : 10px;
+}
+
+.login-div{
+  display: flex;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+}
+.login-div img{
+  width: 45px;
+  height: 45px;
+  align-self: center;
+}
+
+.log-btn{
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin-top: 30px;
+  margin-left: 15px;
+  border-radius: 5px;
+  background-color: rgb(23, 23, 23);
+  object-fit: cover;
+}
+
+.thnk-log-div{
+  margin-left: 10px;
+  width: 245px;
+  display: flex;
+  justify-content: space-around;
 }
