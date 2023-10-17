@@ -10,42 +10,42 @@ export const books = [{
 }, {
   id: ++num,
   image: '/images/Book cover pages/atomic-habits.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/atomic-habits.pdf',
   title: 'Atomic Habits',
   author: 'James Clear',
   desc: "In 'Atomic Habits', James Clear presents a comprehensive guide to understanding and manipulating the tiny behaviors that drive our lives. Clear contends that real change comes not from the pursuit of ambitious goals but from focusing on small, incremental changes - or 'atomic habits'. These tiny changes, stacked together, lead to remarkable results over time."
 }, {
   id: ++num,
   image: '/images/Book cover pages/half-girlfriend.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/half-girlfriend.pdf',
   title: 'Half Girlfriend',
   author: 'Chetan Bhagat',
   desc: "HALF GIRLFRIEND (HINDI) Once upon a time, there was a Bihari boy called Madhav. He fell in love with a girl from Delhi calledRiya. Madhav didn't speak English well. Riya did. Madhav wanted a relationship. Riya didn't. Riya just wanted friendship. Madhav didn't. Riya suggested a compromise. She agreed to be his halfgirlfriend. From the author of the blockbuster novels Five Point Someone, One Night @ the Call Center, The 3 Mistakes of My Life, 2 States and Revolution 2020 comes a simple and beautiful love story that will touch your heart and inspire you to chase your dreams."
 }, {
   id: ++num,
   image: '/images/Book cover pages/ikigai.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/Ikigai.pdf',
   title: 'Ikigai : The Japanese Secret to a Long and Happy Life',
   author: 'Hector Garcia',
   desc:  "The Ikigai book introduces you to various topics related to the art of living, such as the blue zones, longevity, logotherapy, flow, yoga, tai chi, and resilience. It defines what Ikigai is and its rules. The book says that living a long and full life is under your control to an extent"
 }, {
   id: ++num,
   image: '/images/Book cover pages/it-ends-with-us.jpg',
-  pdf: '/Books Data/it-ends-with-us.pdf',
+  pdf: '/Books Data/It-Ends-with-Us.pdf',
   title: 'It Ends With Us',
   author: 'Colleen Hoover',
   desc: " It Ends with Us is a book that follows a girl named Lily who has just moved and is ready to start her life after college. Lily then meets a guy named Ryle and she falls for him. As she is developing feelings for Ryle, Atlas, her first love, reappears and challenges the relationship between Lily and Ryle."
 }, {
   id: ++num,
   image: '/images/Book cover pages/it-starts-with-us.jpg',
-  pdf: '/Books Data/it-starts-with-us.pdf',
+  pdf: '/Books Data/It-Starts-With-Us.pdf',
   title: 'It Starts With Us',
   author: 'Colleen Hoover',
   desc: "It Starts With Us” instead focuses on recovery and starting a new life of healthy love. It's a story about feeling loved for the first time and giving the love you believe others deserve from you. This book explains that not all parental love is unconditional and not all romantic love will end."
 }, {
   id: ++num,
   image: '/images/Book cover pages/kite-runner.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/the-kite-runner.pdf',
   title: 'Kite Runner',
   author: 'Khaled Hosseini',
   desc: "The Kite Runner, written by Khaled Hosseini, tells the extraordinary story of an unlikely friendship between a wealthy Afghan boy, named Amir, and Hassan, the son of his father's servant — who he later finds out, after Hassan's death, has always been his half-brother."
@@ -59,49 +59,49 @@ export const books = [{
 }, {
   id: ++num,
   image: '/images/Book cover pages/sita.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/sita - warrior-of-mithila-westland.pdf',
   title: 'Sita : Warrior of Mithila',
   author: 'Amish',
   desc: " In Amish's book, Sita is a warrior princess, abandoned as an infant,and adopted by King Janak and his wife Sunaina as their heir. Sita's marksmanship surpasses the skills of her male peers. A precocious child, she goes on to prove herself as an able administrator and strategist."
 }, {
   id: ++num,
   image: '/images/Book cover pages/something-im-waiting-to-tell-you.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/something-im-waiting-to-tell-you.pdf',
   title: "Somehing I'm waiting to tell you",
   author: 'Shravya Bhinder',
   desc: " After nearly losing the love of his life to a terrible accident, Ronnie realizes how much he loves Adira and what an idiot he had been to hurt her. What's more, her overprotective mother now takes care of her, and does not like Ronnie being anywhere near her daughter."
 }, {
   id: ++num,
   image: '/images/Book cover pages/the-alchemist.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/the_alchemist.pdf',
   title: 'The Alchemist',
   author: 'Panlo Celho',
   desc: " Santiago, an Andalusian shepherd, decides to journey to the pyramids of Egypt after an encounter with the mysterious king Melchizedek convinces him it is his destiny to pursue the recurring dream he has had since childhood. Along the way, Santiago experiences setbacks and distractions."
 }, {
   id: ++num,
   image: '/images/Book cover pages/the-love-hypothesis.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/the-love-hypothesis.pdf',
   title: 'The Love Hypothesis',
   author: 'Ali Hazelwood',
   desc: "The Love Hypothesis follows the main character Olive in trying to convince her best friend, Anh into thinking that her dating life is going great. In order to convince Anh, she pretends to date her professor, Adam. Olive and Adam try to convince everyone around them they are in love."
 }, {
   id: ++num,
   image: '/images/Book cover pages/the-silent-patient.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/The-Silent-Patient.pdf',
   title: 'The Silent Patient',
   author: 'Alex Michaelides',
   desc: "The Silent Patient is a shocking psychological thriller of a woman's act of violence against her husband—and of the therapist obsessed with uncovering her motive."
 }, {
   id: ++num,
   image: '/images/Book cover pages/the-song-of-acmilles.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/the-song-of-achilles.pdf',
   title: 'The song of Achilles',
   author: 'Madeline Miller',
   desc: " Achilles, 'the best of all the Greeks,' son of the cruel sea goddess Thetis and the legendary king Peleus, is strong, swift, and beautiful, irresistible to all who meet him. Patroclus is an awkward young prince, exiled from his homeland after an act of shocking violence. Brought together by chance, they forge an inseparable bond, despite risking the gods' wrath.They are trained by the centaur Chiron in the arts of war and medicine, but when word comes that Helen of Sparta has been kidnapped, all the heroes of Greece are called upon to lay siege to Troy in her name. Seduced by the promise of a glorious destiny, Achilles joins their cause, and torn between love and fear for hisfriend, Patroclus follows. Little do they know that the cruel Fates will test them both as never before and demand a terrible sacrifice."
 }, {
   id: ++num,
   image: '/images/Book cover pages/things-we-never-got-over.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/',
   title: 'Things we never got over',
   author: 'Lucy Score',
   desc: "The story follows Naomi (36), a runaway bride who finds herself in a small town she's unfamiliar with while her life falls apart. Naomi is now single, jobless, broke, homeless, and the 11-year-old niece she just found out about is suddenly in her care. It's a lot to handle all at once, even for someone who has spent most of her life cleaning up everyone else's messes. As Naomi struggles to make ends meet, there's one man who becomes her unlikely ally: Knox (43). Everything about the surly man's words and attitude tell Naomi to stay far away, but the devastatingly sexy jerk keeps coming to her rescue. He wants nothing to do with a needy, high maintenance woman - or her adorable niece - but Knox can't seem to help himself. And with every interaction, it becomes more coming to her rescue. He wants nothing to do with a needy, high maintenance woman - or her adorable niece - but Knox can't seem to help himself. And with every interaction, it becomes more difficult to stay away."
@@ -115,28 +115,28 @@ export const books = [{
 }, {
   id: ++num,
   image: '/images/Book cover pages/to-you-with-love.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/',
   title: 'to You with Love',
   author: 'Shravya Bhinder',
   desc: " While Sahil is careless, carefree, 'new money' and 'the brat', Ayra is sensitive, reserved, shy and not easy to talk to. And that is probably what attracts Sahil to her. Their story progresses slowly and delicately, and things gradually take on a love-tinged hue. However, their lives soon begin to unravel."
 }, {
   id: ++num,
   image: '/images/Book cover pages/ugly-love.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/',
   title: 'Ugly Love',
   author: 'Colleen Hoover',
   desc: "When Tate Collins meets airline pilot Miles Archer, she knows it isn't love at first sight. They wouldn't even go so far as to consider themselves friends. The only thing Tate and Miles have in common is an undeniable mutual attraction. Once their desires are out in the open, they realize they have the perfect set-up."
 }, {
   id: ++num,
   image: '/images/Book cover pages/verity.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/',
   title: 'Verity',
   author: 'Colleen Hoover',
   desc: " Lowen Ashleigh is a struggling writer on the brink of financial ruin when she accepts the job offer of a lifetime. Jeremy Crawford, husband of bestselling author Verity Crawford, has hired Lowen to complete the remaining books in a successful series his injured wife is unable to finish."
 }, {
   id: ++num,
   image: '/images/Book cover pages/write-me-a-love-story.jpg',
-  pdf: '/Books Data/It-Starts-With-Us.pdf',
+  pdf: '/Books Data/',
   title: 'Write me a love story',
   author: 'Ravinder Singh',
   desc: " Write Me A Love Story by Ravinder Singh, is his latest romance novel set between a best selling author and a literary editor at a budding publishing house. Abhimanyu Razdan & Asmita Mullick starts of on a very wrong foot. Both of them are at each other's throat since day one andnow Abhimanyu is all set ruin her career."
