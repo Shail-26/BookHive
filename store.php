@@ -1,16 +1,25 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
+    header("location: login.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/forall.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/navbar.css" />
-  <link rel="stylesheet" href="/styles/navButton.css" />
-  <link rel="stylesheet" href="/styles/newPage.css" />
-  <link rel="stylesheet" href="/styles/slider.css" />
-  <link rel="stylesheet" href="/styles/store.css" />
-  <link rel="stylesheet" href="/styles/scroll-top.css" />
+  <link rel="stylesheet" href="styles/forall.css" type="text/css" />
+  <link rel="stylesheet" href="styles/navbar.css" />
+  <link rel="stylesheet" href="styles/navButton.css" />
+  <link rel="stylesheet" href="styles/newPage.css" />
+  <link rel="stylesheet" href="styles/slider.css" />
+  <link rel="stylesheet" href="styles/store.css" />
+  <link rel="stylesheet" href="styles/scroll-top.css" />
   <script src="https://kit.fontawsome.com/a076d05399.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,16 +29,7 @@
 <body>
   <div id="navbar-container">   
   </div>
-  <script>
-      // Fetch the navbar content from the navbar.html file
-      fetch('navbar.html')
-          .then(response => response.text())
-          .then(navbarContent => {
-          // Insert the navbar content into the container
-              document.getElementById('navbar-container').innerHTML = navbarContent;
-          })
-      .catch(error => console.error('Error loading navbar:', error));
-  </script>
+  <?php require 'navbar.php'?>
   <button onclick="topFunction()" id="scrollBtn">
     <span class="Container">
       <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +84,7 @@
 </body>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
-<script src="/scripts/top-button.js"></script>
-<script type="module" src="/scripts/store.js"></script>
-<script type="module" src="/scripts/search-btn.js"></script>
+<script src="scripts/top-button.js"></script>
+<script type="module" src="scripts/store.js"></script>
+<script type="module" src="scripts/search-btn.js"></script>
 </html>

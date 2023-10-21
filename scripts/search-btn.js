@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded',function() {
   const resultNotFound = 
   `
     <div class="result-not-found">
-      <p>Result Not Found, You can request the book using the Get In Touch form in <a href="/thankyou.html">Thank you</a> Page.</p> 
+      <p>Result Not Found, You can request the book using the Get In Touch form in <a onclick="location.href='thankyou.php'">Thank you</a> Page.</p> 
     </div>
   `;
 

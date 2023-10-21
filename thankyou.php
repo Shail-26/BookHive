@@ -1,29 +1,24 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/thankyoupage.css" />
-    <link rel="stylesheet" href="/styles/forall.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/navButton.css" />
-    <link rel="stylesheet" href="/styles/contact-us.css" />
-    <link rel="stylesheet" href="/styles/scroll-top.css" />
-    <link rel="stylesheet" href="/styles/store.css" />
+    <link rel="stylesheet" href="styles/thankyoupage.css" />
+    <link rel="stylesheet" href="styles/forall.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/navButton.css" />
+    <link rel="stylesheet" href="styles/contact-us.css" />
+    <link rel="stylesheet" href="styles/scroll-top.css" />
+    <link rel="stylesheet" href="styles/store.css" />
     <title>Thank you</title>
   </head>
   <body>
     <div id="navbar-container"></div>
-    <script>
-      // Fetch the navbar content from the navbar.html file
-      fetch("navbar.html")
-        .then((response) => response.text())
-        .then((navbarContent) => {
-          // Insert the navbar content into the container
-          document.getElementById("navbar-container").innerHTML = navbarContent;
-        })
-        .catch((error) => console.error("Error loading navbar:", error));
-    </script>
+    <?php require 'navbar.php'?>
     <button onclick="topFunction()" id="scrollBtn">
       <span class="Container">
         <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +41,7 @@
     <div class="contact-us-container">
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
       <div class="profile-card">
-        <img src="/images/contact-us/shail.jpeg" alt="Profile Photo">
+        <img src="images/contact-us/shail.jpeg" alt="Profile Photo">
         <div class="profile-details">
             <h2>Shail Macwan</h2>
             <p>22CS035</p>
@@ -64,7 +59,7 @@
         </div>
       </div>
       <div class="profile-card">
-        <img src="/images/contact-us/dhruvi.jpg" alt="Profile Photo">
+        <img src="images/contact-us/dhruvi.jpg" alt="Profile Photo">
         <div class="profile-details">
             <h2>Dhruvi Mahale</h2>
             <p>22CS036</p>
@@ -82,7 +77,7 @@
         </div>
       </div>
       <div class="profile-card">
-        <img src="/images/contact-us/shruti.jpeg" alt="Profile Photo">
+        <img src="images/contact-us/shruti.jpeg" alt="Profile Photo">
         <div class="profile-details">
             <h2>Shruti Panchal</h2>
             <p>22CS044</p>

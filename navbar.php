@@ -1,21 +1,34 @@
-<header>
+<?php
+$loggedin = false;
+if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+  $loggedin = true;
+}
+
+
+echo '<header>
   <div class="navbar-div">
     <!-- logo start -->
     <div class="logo-link-div">
       <div class="logo-div">
-        <img src="../images/logo/logo_final.png" alt="logo" />
-        <a href="/newPage.html">BookHive</a>
+        <img src="images/logo/logo_final.png" alt="logo" />
+        <a href="newPage.php">BookHive</a>
       </div>
       <!-- logo end -->
   
       <!-- link start -->
       <div class="links-div">
         <ul class="nav-links">
-          <li><a href="/newPage.html">Home</a></li>
-          <li><a href="/store.html">Store</a></li>
-          <li><a href="/myLibrary.html">My Library</a></li>
-        </ul>
+          <li><a href="newPage.php">Home</a></li>
+          <li><a href="store.php">Store</a></li>
+          <li><a href="myLibrary.php">My Library</a></li>';
+
+          if($loggedin){
+          echo '<li><a href="logout.php">Logout</a></li>';
+          }
+
+        echo '</ul>
       </div>
+
       <!-- link end -->
       <div class="search-container">
         <input type="text" name="text" class="input" placeholder="Search a book" id="searchInput">
@@ -25,23 +38,27 @@
           </svg>
         </button>
       </div>
-    </div>
-    
-    <div class="thnk-log-div">
+    </div>';
+    if(!$loggedin){
+      echo '<div class="thnk-log-div">
       <div class="login-div">
-        <!-- <a href="/login-register.html" type="button" class="login-btn" >
-          LOGIN
-        </a> -->
-        <button  class="log-btn"  onclick="location.href='/login-register.html';">
-         <img src="/images/logo/log_in.png">
+
+      
+        <button class="log-btn"  onclick="location.href=`register.php`;">
+          <img src="images/logo/log_in.png">
         </button>
-      </div>
+      
+
+      </div>';
+    }
   
-      <div class="thank-div">
-        <button onclick="location.href='/thankyou.html';">
+      echo '<div class="thank-div">
+        <button onclick="location.href=`thankyou.php`;">
           Thank You
         </button>
       </div>
     </div>
   </div>
-</header>
+</header>'
+
+?>

@@ -1,31 +1,37 @@
+<?php
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
         <title>Library</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/styles/forall.css" type="text/css" />
-        <link rel="stylesheet" href="/styles/navbar.css" />
-        <link rel="stylesheet" href="/styles/navButton.css" />
-        <link rel="stylesheet" href="/styles/newPage.css" />
-        <link rel="stylesheet" href="/styles/slider.css" />
-        <link rel="stylesheet" href="/styles/store.css" />
-        <link rel="stylesheet" href="/styles/scroll-top.css" />
+        <link rel="stylesheet" href="styles/forall.css" type="text/css" />
+        <link rel="stylesheet" href="styles/navbar.css" />
+        <link rel="stylesheet" href="styles/navButton.css" />
+        <link rel="stylesheet" href="styles/newPage.css" />
+        <link rel="stylesheet" href="styles/slider.css" />
+        <link rel="stylesheet" href="styles/store.css" />
+        <link rel="stylesheet" href="styles/scroll-top.css" />
         <script src="https://kit.fontawsome.com/a076d05399.js"></script>
     </head>
     <body>
         <div id="navbar-container">   
         </div>
-        <script>
+        <!-- <script>
             // Fetch the navbar content from the navbar.html file
-            fetch('navbar.html')
+            fetch('navbar.php')
                 .then(response => response.text())
                 .then(navbarContent => {
                 // Insert the navbar content into the container
                     document.getElementById('navbar-container').innerHTML = navbarContent;
                 })
             .catch(error => console.error('Error loading navbar:', error));
-        </script>
+        </script> -->
+        <?php require 'navbar.php'?>
           <button onclick="topFunction()" id="scrollBtn">
             <span class="Container">
               <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -51,19 +57,19 @@
             
                     <!-- slide images starts -->
                     <div class="slide first">
-                        <img src="/images/Books Poster/1b.png" alt="">
+                        <a href="store.php"><img src="images/Books Poster/1b.png" alt=""></a>
                     </div>
             
                     <div class="slide">
-                        <img src="/images/Books Poster/2b.png" alt="">
+                        <a href="store.php"><img src="images/Books Poster/2b.png" alt=""></a>
                     </div>
             
                     <div class="slide">
-                        <img src="/images/Books Poster/3b.png" alt="">
+                        <a href="store.php"><img src="images/Books Poster/3b.png" alt=""></a>
                     </div>
             
                     <div class="slide">
-                        <img src="/images/Books Poster/5b.png" alt="">
+                        <a href="store.php"><img src="images/Books Poster/5b.png" alt=""></a>
                     </div>
                     <!-- slide images end -->
             
@@ -100,7 +106,7 @@
             </script>
 
     </body>
-    <script src="/scripts/top-button.js"></script>
+    <script src="scripts/top-button.js"></script>
     <script>
         setTimeout(function() {
           // Your code to be executed after 3 seconds
