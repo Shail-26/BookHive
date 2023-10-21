@@ -127,7 +127,7 @@ if(isset($_GET['remove'])){
             setTimeout(function() {
               // Your code to be executed after 3 seconds
                 document.querySelector('.search-container').style.display = 'none';
-            },10);
+            },100);
     </script>
 </body>
 </html>
