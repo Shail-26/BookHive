@@ -40,10 +40,9 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
 
   <div class="grid-container js-result-book-grid">
   </div>
-  
-  
+  <hr >
   <p class="all-books">All Books</p>
-  <hr>
+  <hr style="margin-top : 10px;">
   <div class="grid-container js-book-grid">
     <!-- <div class="grid-item">
       <img src="/images/Book cover pages/1b.jpg" alt="Image 1">
@@ -84,6 +83,27 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
     </div> -->
     </div>
 </body>
+<script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="scripts/top-button.js"></script>
