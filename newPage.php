@@ -9,13 +9,14 @@ session_start();
         <title>Library</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/forall.css" type="text/css" />
-        <link rel="stylesheet" href="styles/navbar.css" />
-        <link rel="stylesheet" href="styles/navButton.css" />
-        <link rel="stylesheet" href="styles/newPage.css" />
-        <link rel="stylesheet" href="styles/slider.css" />
-        <link rel="stylesheet" href="styles/store.css" />
-        <link rel="stylesheet" href="styles/scroll-top.css" />
+        <meta http-equiv="Cache-control" content="no-cache">
+        <link rel="stylesheet" href="styles/forall.css?v=<?php echo time(); ?>" type="text/css" />
+        <link rel="stylesheet" href="styles/navbar.css?v=<?php echo time(); ?>" />
+        <link rel="stylesheet" href="styles/navButton.css?v=<?php echo time(); ?>" />
+        <link rel="stylesheet" href="styles/newPage.css?v=<?php echo time(); ?>" />
+        <link rel="stylesheet" href="styles/slider.css?v=<?php echo time(); ?>" />
+        <link rel="stylesheet" href="styles/store.css?v=<?php echo time(); ?>" />
+        <link rel="stylesheet" href="styles/scroll-top.css?v=<?php echo time(); ?>" />
         <script src="https://kit.fontawsome.com/a076d05399.js"></script>
     </head>
     <body>
@@ -104,6 +105,16 @@ session_start();
                     }
                 }, 5000);
             </script>
+
+    <hr>
+    <?php
+        if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
+            echo "<p class='lock-store'>To access the bookstore, please &#160<a href='login.php' class='auth-link'> authenticate </a>&#160 your account.</p>";
+        } else {
+            echo "<p class='lock-store'>Welcome to your literary journey. Start exploring at BookHive Library &#160<a href='store.php' class='auth-link'>Store.</a></p>";
+        }
+    ?>
+
 
     </body>
     <script src="scripts/top-button.js"></script>

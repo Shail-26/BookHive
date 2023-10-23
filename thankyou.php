@@ -7,13 +7,14 @@ session_start();
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/thankyoupage.css" />
-    <link rel="stylesheet" href="styles/forall.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/navButton.css" />
-    <link rel="stylesheet" href="styles/contact-us.css" />
-    <link rel="stylesheet" href="styles/scroll-top.css" />
-    <link rel="stylesheet" href="styles/store.css" />
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link rel="stylesheet" href="styles/thankyoupage.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="styles/forall.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="styles/navbar.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="styles/navButton.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="styles/contact-us.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="styles/scroll-top.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="styles/store.css?v=<?php echo time(); ?>" />
     <title>Thank you</title>
   </head>
   <body>

@@ -40,11 +40,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/forall.css" type="text/css" />
-        <link rel="stylesheet" href="styles/navbar.css" />
-        <link rel="stylesheet" href="styles/navButton.css" />
-        <link rel="stylesheet" href="styles/scroll-top.css" />
-        <link rel="stylesheet" href="styles/login-register.css" />
+        <meta http-equiv="Cache-control" content="no-cache">
+        <link rel="stylesheet" href="styles/forall.css?v=<?php echo time(); ?>" type="text/css" />
+        <link rel="stylesheet" href="styles/navbar.css?v=<?php echo time(); ?>" />
+        <link rel="stylesheet" href="styles/navButton.css?v=<?php echo time(); ?>" />
+        <link rel="stylesheet" href="styles/scroll-top.css?v=<?php echo time(); ?>" />
+        <link rel="stylesheet" href="styles/login-register.css?v=<?php echo time(); ?>" />
         <script src="https://kit.fontawsome.com/a076d05399.js"></script>
     </head>
     <body>

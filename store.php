@@ -13,13 +13,14 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/forall.css" type="text/css" />
-  <link rel="stylesheet" href="styles/navbar.css" />
-  <link rel="stylesheet" href="styles/navButton.css" />
-  <link rel="stylesheet" href="styles/newPage.css" />
-  <link rel="stylesheet" href="styles/slider.css" />
-  <link rel="stylesheet" href="styles/store.css" />
-  <link rel="stylesheet" href="styles/scroll-top.css" />
+  <meta http-equiv="Cache-control" content="no-cache">
+  <link rel="stylesheet" href="styles/forall.css?v=<?php echo time(); ?>" type="text/css" />
+  <link rel="stylesheet" href="styles/navbar.css?v=<?php echo time(); ?>" />
+  <link rel="stylesheet" href="styles/navButton.css?v=<?php echo time(); ?>" />
+  <link rel="stylesheet" href="styles/newPage.css?v=<?php echo time(); ?>" />
+  <link rel="stylesheet" href="styles/slider.css?v=<?php echo time(); ?>" />
+  <link rel="stylesheet" href="styles/store.css?v=<?php echo time(); ?>" />
+  <link rel="stylesheet" href="styles/scroll-top.css?v=<?php echo time(); ?>" />
   <script src="https://kit.fontawsome.com/a076d05399.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -42,6 +43,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
   
   
   <p class="all-books">All Books</p>
+  <hr>
   <div class="grid-container js-book-grid">
     <!-- <div class="grid-item">
       <img src="/images/Book cover pages/1b.jpg" alt="Image 1">
@@ -85,6 +87,6 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="scripts/top-button.js"></script>
-<script type="module" src="scripts/store.js"></script>
-<script type="module" src="scripts/search-btn.js"></script>
+<script type="module" src="scripts/store.js?v=<?php echo time(); ?>"></script>
+<script type="module" src="scripts/search-btn.js?v=<?php echo time(); ?>"></script>
 </html>
