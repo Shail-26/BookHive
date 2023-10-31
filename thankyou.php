@@ -100,9 +100,12 @@ session_start();
     <div class="get-in-touch-container">
       <form action="https://formsubmit.co/22cs035+bookhive@charusat.edu.in" method="POST">
         <h3>GET IN TOUCH</h3>
+        <input type="hidden" name="_template" value="table">
         <input type="text" id="name" name="Name" placeholder="Your Name" required>
         <input type="email" id="email" name="Email" placeholder="Email ID" required>
         <textarea id="message" rows="4" name="Message" placeholder="How can we help you?"></textarea>
+        <input type="hidden" name="_next" value="http://localhost/BookHive/thankyou.php">
+        <input type="hidden" name="_autoresponse" value="Your request will be duly considered.">
         <button type="submit">Submit</button>
       </form>
     </div>
