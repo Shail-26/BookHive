@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded',function() {
           <div class="grid-item">
             <img src="${book.image}" alt="Image ${book.id}">
             <div class="Btn-div">
-              <button class="Btn read-online-btn">
+              <button class="Btn read-online-btn" onclick="location.href='${book.pdf}'">
                 <span class="svgContainer">
                   <svg width="512" height="512" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <mask id="ipSReadBook0">
@@ -57,14 +57,22 @@ document.addEventListener('DOMContentLoaded',function() {
                     <div class="tooltip">Download</div>
                 </button>
               </a>
-              <button class="Btn favorites-btn">
-                <span class="svgContainer">
-                  <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#000000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"/>
-                </svg>
-                  <span class="BG"></span>
-                  <div class="tooltip">Favorite</div>
-              </button>
+              <form method="post" id="libraryform" action="myLibrary.php" >
+                <button class="Btn favorites-btn" type="submit" name="favorites-btn">
+                  <span class="svgContainer">
+                    <svg width="512" height="512" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#000000" d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"/>
+                  </svg>
+                    <span class="BG"></span>
+                    <div class="tooltip">Favorite</div>
+                </button>
+                <input type="hidden" name="book_id" value="${book.id}">
+                <input type="hidden" name="book_image" value="${book.image}">
+                <input type="hidden" name="book_pdf" value="${book.pdf}">
+                <input type="hidden" name="book_title" value="${book.title}">
+                <input type="hidden" name="book_author" value="${book.author}">
+                <input type="hidden" name="book_desc" value="${book.desc}">
+              </form>
             </div>
           </div>
         `;
